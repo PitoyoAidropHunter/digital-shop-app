@@ -1,12 +1,9 @@
-import products from "@/data/products";
 import Navbar from "../components/Navbar/page";
-import CardProduct from "../components/products/ProductCard/page";
 import Image from "next/image";
 import sample from "../../../public/images/sample.jpg";
 import Footer from "../components/Footer/page";
-import CardCategory from "../components/products/CategoryCard/page";
 import category from "@/data/category";
-import { Link } from "lucide-react";
+import CategoryCard from "../components/products/CategoryCard";
 
 const Home = () => {
   return (
@@ -32,7 +29,7 @@ const Home = () => {
             <h1 className="text-4xl font-semibold">Category</h1>
             <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-10 mt-10">
               {category.map((category) => (
-                <CardCategory key={category.id} category={category} />
+                <CategoryCard key={category.id} category={category} />
               ))}
             </div>
           </div>

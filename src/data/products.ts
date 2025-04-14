@@ -1,12 +1,13 @@
 import sample from "../../public/images/sample.jpg";
 import sample2 from "../../public/images/sample2.jpg";
+import { StaticImageData } from "next/image";
 
 export interface Product {
   id: number;
   name: string;
   description: string;
   price: number;
-  image: any;
+  image: StaticImageData;
   category: string;
 }
 

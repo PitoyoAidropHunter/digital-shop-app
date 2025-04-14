@@ -1,22 +1,23 @@
-import { Link } from "lucide-react";
 import Image from "next/image";
+import { StaticImageData } from "next/image";
+import Link from "next/link";
 
 interface Category {
   id: number;
   name: string;
-  image: string;
+  image: StaticImageData;
   slug: string;
 }
 
-interface CardCategoryProps {
+interface CategoryCardProps {
   category: Category;
 }
 
-const CardCategory: React.FC<CardCategoryProps> = ({ category }) => {
+const CategoryCard: React.FC<CategoryCardProps> = ({ category }) => {
   return (
-    <a
+    <Link
       href={`products/category/${category.slug}`}
-      className="flex flex-col items-center "
+      className="flex flex-col items-center"
     >
       <div className="w-64 h-40 overflow-hidden rounded-xl shadow-lg">
         <Image
@@ -26,8 +27,8 @@ const CardCategory: React.FC<CardCategoryProps> = ({ category }) => {
         />
       </div>
       <h2 className=" text-xl mt-5">{category.name}</h2>
-    </a>
+    </Link>
   );
 };
 
-export default CardCategory;
+export default CategoryCard;

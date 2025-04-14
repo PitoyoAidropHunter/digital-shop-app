@@ -1,10 +1,11 @@
 import sample from "../../public/images/sample.jpg";
 import sample2 from "../../public/images/sample2.jpg";
+import { StaticImageData } from "next/image";
 
 export interface Category {
   id: number;
   name: string;
-  image: any;
+  image: StaticImageData;
   slug: string;
 }
 

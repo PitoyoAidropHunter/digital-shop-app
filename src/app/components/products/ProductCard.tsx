@@ -1,18 +1,19 @@
 import Image from "next/image";
+import { StaticImageData } from "next/image";
 
 interface Product {
   id: number;
   name: string;
   price: number;
-  image: string;
+  image: StaticImageData;
   description: string;
 }
 
-interface CardProductProps {
+interface ProductCardProps {
   product: Product;
 }
 
-const CardProduct: React.FC<CardProductProps> = ({ product }) => {
+const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
     <div>
       <Image className="rounded-lg" src={product.image} alt={product.name} />
@@ -26,4 +27,4 @@ const CardProduct: React.FC<CardProductProps> = ({ product }) => {
   );
 };
 
-export default CardProduct;
+export default ProductCard;
