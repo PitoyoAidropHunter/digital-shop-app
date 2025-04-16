@@ -10,8 +10,8 @@ const AboutPage = () => {
         <h1 className="text-4xl font-bold mb-6 text-center">Tentang Kami</h1>
 
         <p className="text-lg mb-6 text-center">
-          Kami adalah studio kreatif yang fokus membuat{" "}
-          <strong>desain eksklusif</strong> untuk produk fashion seperti{" "}
+          Kami adalah studio kreatif yang fokus membuat
+          <strong>desain eksklusif</strong> untuk produk fashion seperti
           <span className="text-indigo-600 font-semibold">
             kaos, topi, hoodie, tote bag
           </span>
