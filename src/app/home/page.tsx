@@ -27,7 +27,7 @@ const Home = () => {
 
           <div className="my-24">
             <h1 className="text-4xl font-semibold">Category</h1>
-            <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-10 mt-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-10 mt-10">
               {category.map((category) => (
                 <CategoryCard key={category.id} category={category} />
               ))}
