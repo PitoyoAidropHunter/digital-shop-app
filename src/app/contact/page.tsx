@@ -25,7 +25,9 @@ export default function ContactPage() {
     <div className="bg-secondary w-full text-primary">
       <Navbar />
       <div className="max-w-3xl mx-auto px-4 py-16 ">
-        <h1 className="text-4xl font-bold mb-4 text-center">Hubungi Kami</h1>
+        <h1 className="text-xl md:text-2xl lg:text-4xl font-bold mb-2 md:mb-4 text-center">
+          Hubungi Kami
+        </h1>
         <p className="text-center text-gray-600 mb-10">
           Punya pertanyaan, permintaan desain custom, atau ingin kolaborasi?
           Kami siap mendengar dari kamu.

@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between max-w-7xl w-full">
           {/* Logo */}
           <div>
-            <h1 className="font-bold text-3xl">Design Kita</h1>
+            <h1 className="font-bold text-xl lg:text-3xl">Design Kita</h1>
           </div>
 
           {/* Search */}

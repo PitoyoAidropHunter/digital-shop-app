@@ -6,7 +6,9 @@ const Footer = () => {
       <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row md:justify-between gap-10">
         {/* Brand */}
         <div className="flex-1">
-          <h2 className="text-2xl font-bold mb-4">DigitalShop</h2>
+          <h2 className="text-xl md:text-2xl font-bold mb-2 md:mb-4">
+            Design Kita
+          </h2>
           <p className="text-sm text-gray-300 leading-relaxed">
             Produk digital terbaik hanya di sini. Cepat, praktis, dan
             terpercaya.

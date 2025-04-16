@@ -10,24 +10,26 @@ const Home = () => {
     <>
       <div className=" flex flex-col poppins-light">
         <Navbar />
-        <div className="min-h-screen px-10 lg:px-20 text-primary flex flex-col bg-secondary">
+        <div className="min-h-screen px-6 lg:px-20 text-primary flex flex-col bg-secondary">
           <div className=" text-primary flex h-72 py-4 rounded-lg">
             <Image src={sample} alt="" className="rounded-lg" />
           </div>
           <div className="text-center">
-            <h1 className="text-3xl font-semibold mt-8 mb-8">
-              Digital Product
+            <h1 className="text-xl md:text-3xl font-semibold my-4 lg:my-8">
+              Produk Digital
             </h1>
-            <p>
-              1,778 inspirational designs, illustrations, and graphic elements
-              from the world’s best designers. Want more inspiration? Browse our
-              search results
+            <p className="text-sm md:text-lg font-light mb-8">
+              1.778 desain, ilustrasi, dan elemen grafis yang inspiratif dari
+              para desainer terbaik di dunia. Ingin lebih banyak inspirasi?
+              Jelajahi hasil pencarian kami.
             </p>
           </div>
 
           <div className="my-24">
-            <h1 className="text-4xl font-semibold">Category</h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-10 mt-10">
+            <h1 className="text-xl md:text-2xl lg:text-4xl font-semibold">
+              Category
+            </h1>
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-10 mt-5 md:mt-10">
               {category.map((category) => (
                 <CategoryCard key={category.id} category={category} />
               ))}
