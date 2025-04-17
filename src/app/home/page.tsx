@@ -16,12 +16,12 @@ const Home = () => {
           </div>
           <div className="text-center">
             <h1 className="text-xl md:text-3xl font-semibold my-4 lg:my-8">
-              Produk Digital
+              Digital Product
             </h1>
             <p className="text-sm md:text-lg font-light mb-8">
-              1.778 desain, ilustrasi, dan elemen grafis yang inspiratif dari
-              para desainer terbaik di dunia. Ingin lebih banyak inspirasi?
-              Jelajahi hasil pencarian kami.
+              1,778 inspiring designs, illustrations, and graphic elements from
+              the world’s top designers. Want more inspiration? Explore our
+              search results.
             </p>
           </div>
 

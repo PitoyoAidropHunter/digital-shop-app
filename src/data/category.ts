@@ -1,5 +1,5 @@
-import sample from "../../public/images/sample.jpg";
-import sample2 from "../../public/images/sample2.jpg";
+import tshirt from "../../public/images/t-shirt.jpg";
+import sport from "../../public/images/sport.jpg";
 import { StaticImageData } from "next/image";
 
 export interface Category {
@@ -12,14 +12,14 @@ export interface Category {
 const category: Category[] = [
   {
     id: 1,
-    name: "Kacang tanah enak",
-    image: sample,
-    slug: "kacang-tanah-enak",
+    name: "T-Shirt",
+    image: tshirt,
+    slug: "t-shirt",
   },
   {
     id: 2,
     name: "Manusia",
-    image: sample2,
+    image: sport,
     slug: "manusia",
   },
 ];

@@ -21,7 +21,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       <p className="text-sm text-gray-400">{product.description}</p>
       <p>price Rp {product.price.toLocaleString()}</p>
       <button className="mt-4 font-semibold cursor-pointer">
-        Beli Sekarang
+        Let's Buy Now
       </button>
     </div>
   );

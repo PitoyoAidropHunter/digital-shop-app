@@ -10,43 +10,43 @@ const Footer = () => {
             Design Kita
           </h2>
           <p className="text-sm text-gray-300 leading-relaxed">
-            Produk digital terbaik hanya di sini. Cepat, praktis, dan
-            terpercaya.
+            The best digital products are right here. Fast, practical, and
+            reliable.
           </p>
         </div>
 
         {/* Links */}
         <div className="flex-[2] grid grid-cols-2 sm:grid-cols-3 gap-8">
-          {/* Navigasi */}
+          {/* Navigation */}
           <div>
-            <h3 className="font-semibold mb-4">Navigasi</h3>
+            <h3 className="font-semibold mb-4">Navigation</h3>
             <ul className="space-y-2 text-sm text-gray-300">
               <li>
                 <Link href="/" className="hover:text-white">
-                  Beranda
+                  Home
                 </Link>
               </li>
               <li>
                 <Link href="/products" className="hover:text-white">
-                  Produk
+                  Products
                 </Link>
               </li>
               <li>
                 <Link href="/about" className="hover:text-white">
-                  Tentang
+                  About
                 </Link>
               </li>
               <li>
                 <Link href="/contact" className="hover:text-white">
-                  Kontak
+                  Contact
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Sosial Media */}
+          {/* Social Media */}
           <div>
-            <h3 className="font-semibold mb-4">Sosial Media</h3>
+            <h3 className="font-semibold mb-4">Social Media</h3>
             <ul className="space-y-2 text-sm text-gray-300">
               <li>
                 <Link href="#" className="hover:text-white">
@@ -66,9 +66,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Kontak */}
+          {/* Contact */}
           <div>
-            <h3 className="font-semibold mb-4">Kontak</h3>
+            <h3 className="font-semibold mb-4">Contact</h3>
             <p className="text-sm text-gray-300">
               Email: support@digitalshop.com
               <br />

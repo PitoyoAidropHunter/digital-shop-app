@@ -26,16 +26,16 @@ export default function ContactPage() {
       <Navbar />
       <div className="max-w-3xl mx-auto px-4 py-16 ">
         <h1 className="text-xl md:text-2xl lg:text-4xl font-bold mb-2 md:mb-4 text-center">
-          Hubungi Kami
+          Contact Us
         </h1>
         <p className="text-center text-gray-600 mb-10">
-          Punya pertanyaan, permintaan desain custom, atau ingin kolaborasi?
-          Kami siap mendengar dari kamu.
+          Have a question, a custom design request, or want to collaborate?
+          We’re ready to hear from you..
         </p>
 
         {submitted ? (
           <div className="text-center bg-green-100 text-green-800 p-6 rounded-xl">
-            ✅ Pesan kamu telah terkirim. Kami akan segera menghubungi kamu!
+            ✅ Your message has been sent. We’ll get back to you shortly!
           </div>
         ) : (
           <form
@@ -47,7 +47,7 @@ export default function ContactPage() {
                 htmlFor="name"
                 className="block text-sm font-semibold mb-1"
               >
-                Nama
+                Name
               </label>
               <input
                 type="text"
@@ -81,7 +81,7 @@ export default function ContactPage() {
                 htmlFor="message"
                 className="block text-sm font-semibold mb-1"
               >
-                Pesan
+                Message
               </label>
               <textarea
                 name="message"
@@ -97,7 +97,7 @@ export default function ContactPage() {
               type="submit"
               className="w-full bg-indigo-600 text-white py-2 rounded-lg font-semibold hover:bg-indigo-700 transition"
             >
-              Kirim Pesan
+              Send Message
             </button>
           </form>
         )}
