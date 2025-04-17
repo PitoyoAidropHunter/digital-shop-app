@@ -20,9 +20,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       <h2 className="font-semibold text-lg mt-2">{product.name}</h2>
       <p className="text-sm text-gray-400">{product.description}</p>
       <p>price Rp {product.price.toLocaleString()}</p>
-      <button className="mt-4 font-semibold cursor-pointer">
-        Let's Buy Now
-      </button>
+      <button className="mt-4 font-semibold cursor-pointer">Buy</button>
     </div>
   );
 };
