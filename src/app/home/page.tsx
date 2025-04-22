@@ -1,9 +1,10 @@
 import Navbar from "../components/Navbar/page";
 import Image from "next/image";
-import sample from "../../../public/images/sample.jpg";
+import banner from "../../../public/images/image-banner.png";
 import Footer from "../components/Footer/page";
 import category from "@/data/category";
 import CategoryCard from "../components/products/CategoryCard";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -11,9 +12,50 @@ const Home = () => {
       <div className=" flex flex-col poppins-light">
         <Navbar />
         <div className="min-h-screen px-6 lg:px-20 text-primary flex flex-col bg-secondary">
-          <div className=" text-primary flex h-72 py-4 rounded-lg">
-            <Image src={sample} alt="" className="rounded-lg" />
+          <div className="hidden text-secondary bg-indigo-600 mt-6 sm:flex h-[144px] md:h-72 py-4 rounded-lg">
+            <div className="ml-40">
+              <Image
+                src={banner}
+                alt="Banner"
+                width={300}
+                height={300}
+                className="relative right-36 md:relative md:right-20"
+              />
+            </div>
+            <div className="relative right-36 md:relative md:right-20 flex flex-col items-start justify-center">
+              <h1 className="md:text-4xl text-lg">
+                Creative Designs, Affordable Price
+              </h1>
+              <h5 className="text-lg font-light mt-2">
+                Get quality digital products - without breaking the bank
+              </h5>
+              <Link
+                href={""}
+                className="bg-gray-800 rounded-full px-8 py-1 mt-2"
+              >
+                Explore Now
+              </Link>
+            </div>
           </div>
+
+          <div className="text-secondary bg-indigo-600 mt-6 h-48 py-4 rounded-lg flex sm:hidden">
+            <div className="w-1/2">
+              <Image src={banner} alt="banner" className="w-full h-[80%]" />
+            </div>
+            <div className="w-1/2 mr-3">
+              <h4 className="text-lg">Creative Designs, Affordable Price</h4>
+              <h6 className="text-sm my-2 text-secondary/90">
+                Get quality digital products - without breaking the bank
+              </h6>
+              <Link
+                href={""}
+                className="text-xs bg-gray-800 mt-2 rounded-full px-4 py-1"
+              >
+                Explore Now
+              </Link>
+            </div>
+          </div>
+
           <div className="text-center">
             <h1 className="text-xl md:text-3xl font-semibold my-4 lg:my-8">
               Digital Product

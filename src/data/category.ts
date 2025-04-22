@@ -1,5 +1,5 @@
-import tshirt from "../../public/images/t-shirt.jpg";
-import sport from "../../public/images/sport.jpg";
+import tshirt from "../../public/images/category/t-shirt.jpg";
+import sport from "../../public/images/category/sport.jpg";
 import { StaticImageData } from "next/image";
 
 export interface Category {
